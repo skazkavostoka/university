@@ -7,8 +7,8 @@ Q1 = data[numeric_features].quantile(0.25)
 Q3 = data[numeric_features].quantile(0.75)
 IQR = Q3 - Q1
 
-lower_bound = Q1 - 1.5 * IQR #нижняя граница
-upper_bound = Q3 + 1.5 * IQR #верхняя граница
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
 
 anomalies = {}
 transliter = {'Open': '"Цена открытия (Open)"', 'High': '"Максимум цены (High)"',
